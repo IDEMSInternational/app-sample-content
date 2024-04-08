@@ -1,67 +1,68 @@
 # Sample content
 Copy the structure of this repo for new repos deleting anything in app_data and re working config.ts
 
-## Workflows
-### Android-release
-#### Trigger
-Manuall
-#### Description
+# Workflows
+## Android-release
+### Trigger
+Manual
+### Description
 This will create a release and upload it to Google play console. The first time this is run users will need to upload the 'release_bundle' created in the action manually. It will only upload automatically once the first build as been uploaded.
-#### Setup needed
-APP_CODE_BRANCH - the tag/branch for the code repository
-APP_ID - app id used in firebase and play store (generally international.idems.[DEPLOYMENT NAME])
-DEPLOYMENT_NAME - Name of app (use underscores)
-using keytool -genkeypair -v -keystore [APP_ID] -keyalg RSA -keysize 2048 -validity 10000 -alias [ALIAS]
-  ALIAS - Name of app (use hyphens)
-  KEY_PASSWORD - random
-  KEY_STORE_PASSWORD
-  SIGNING_KEY - generated with tool
-GOOGLE_PLAY_SERVICE_ACCOUNT_JSON - Service account to access Google Play
+### Setup needed
+- APP_CODE_BRANCH - the tag/branch for the code repository
+- APP_ID - app id used in firebase and play store (generally international.idems.[DEPLOYMENT NAME])
+- DEPLOYMENT_NAME - Name of app (use underscores)
+  
+`using keytool -genkeypair -v -keystore [APP_ID] -keyalg RSA -keysize 2048 -validity 10000 -alias [ALIAS]`
+  - ALIAS - Name of app (use hyphens)
+  - KEY_PASSWORD - random
+  - KEY_STORE_PASSWORD
+  - SIGNING_KEY - generated with tool
+- GOOGLE_PLAY_SERVICE_ACCOUNT_JSON - Service account to access Google Play
 
 Play console set up
-config.ts
+#### config.ts
     config.android
     config.api.db_name (to log data)
     config.error_logging (glitch tip dsn added)
 
-### Content-sync
-#### Trigger
+## Content-sync
+### Trigger
 Manual
-#### Description
+### Description
 This will grab content from Sheets and create a PR with the changes
-#### Setup needed
-PAT - Personal access token from GitHub in order to comit code and create a PR
+### Setup needed
+- PAT - Personal access token from GitHub in order to comit code and create a PR
 access to sheets via credentials (see https://developers.google.com/workspace/guides/create-credentials)
-GDRIVE_CREDENTIALS - 
-GDRIVE_TOKEN - 
+- GDRIVE_CREDENTIALS - 
+- GDRIVE_TOKEN - 
 
-config.ts
+#### config.ts
     config.google_drive 
 
 
-### Deploy-firebase
-#### Trigger
+## Deploy-firebase
+### Trigger
 Automatic - When new code is mergerd into main
-#### Description
+### Description
 This will create a web preview in Firebase
-#### Setup needed
+### Setup needed
 
-### Deploy-pr-preview
-#### Trigger
+## Deploy-pr-preview
+### Trigger
 Automatic - When 'test - preview' is added to a PR
-#### Description
+### Description
 This will create a temporary web preview based on the PR branch. The URL will be added to the PR
-#### Setup needed
+### Setup needed
 See Deploy-firebase
 
-### Firebase-release
-#### Trigger
+## Firebase-release
+### Trigger
 Manual
-#### Description
+### Description
 Same as Deploy-firebase but uses FIREBASE_HOSTING_TARGET_RELEASE and is manually triggered
 #### Setup needed
 
-### Translations down
+## Translations down
 WIP
-### Translations up
+## Translations up
 WIP
