@@ -1,8 +1,8 @@
 import { generateDeploymentConfig } from "scripts";
 const config = generateDeploymentConfig("appbuilder_sample");
 
-config.google_drive.sheets_folder_ids =  ["1k8zJfBeOm18gYDsk0XmdUm7OFtZDUY9R", "1rFg8qsmb3xSOXw_9Iwxk8RgSmyjqiao9"];
-config.google_drive.assets_folder_ids = ["1KcHDI7O4o2_FZ_YlXsz-8OqN3ehsfdVf", "1tr76W9OusHHkjJ4DNR84x-B26VgGCSFy"];
+config.google_drive.sheets_folder_ids =  ["10UYZE0yEh36z9suTdXbT-Fb6NzRqLkqr", "1OnK992PdrSlGJyjqE-EIV3P19Rd1z2sl"];
+config.google_drive.assets_folder_ids = ["1SvFOEroXpiaox0d91t2p96_jOJ6Re5oK", "1iIo3YJsyVRL8NRDG4L9xGs_8SK7q8h-g"];
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-sample-content.git",
