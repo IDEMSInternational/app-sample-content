@@ -1,3 +1,4 @@
+import { generateDeploymentConfig } from "scripts";
 const config = generateDeploymentConfig("app_sample");
 
 config.google_drive.sheets_folder_ids =  ["1k8zJfBeOm18gYDsk0XmdUm7OFtZDUY9R", "1rFg8qsmb3xSOXw_9Iwxk8RgSmyjqiao9"];
