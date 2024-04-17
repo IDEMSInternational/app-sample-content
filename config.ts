@@ -6,7 +6,7 @@ config.google_drive.assets_folder_ids = ["1SvFOEroXpiaox0d91t2p96_jOJ6Re5oK", "1
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-sample-content.git",
-  content_tag_latest: "0.0.1",
+  content_tag_latest: "0.0.2",
 };
 
 config.android = {
