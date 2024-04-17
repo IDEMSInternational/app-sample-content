@@ -34,7 +34,7 @@
       "flow_type": "data_list",
       "flow_name": "home_screen_section_data",
       "data_list_name": "home_screen_section",
-      "_xlsxPath": "data/FacilitatorApp MX content.xlsx"
+      "_xlsxPath": "data/test content.xlsx"
     },
     "privacy_policy": {
       "flow_type": "data_list",
@@ -60,7 +60,12 @@
       "flow_type": "data_list",
       "flow_name": "media_data",
       "data_list_name": "media",
-      "_xlsxPath": "data/FacilitatorApp MX content.xlsx"
+      "_xlsxPath": "data/test content.xlsx"
+    },
+    "message_data": {
+      "flow_type": "data_list",
+      "flow_name": "message_data",
+      "_xlsxPath": "data/test content.xlsx"
     },
     "number_data": {
       "flow_type": "data_list",
@@ -84,7 +89,7 @@
       "flow_type": "data_list",
       "flow_name": "pdf_data",
       "data_list_name": "pdf",
-      "_xlsxPath": "data/FacilitatorApp MX content.xlsx"
+      "_xlsxPath": "data/test content.xlsx"
     },
     "profile_section_data": {
       "flow_type": "data_list",
@@ -92,17 +97,32 @@
       "data_list_name": "profile_section",
       "_xlsxPath": "data/profile_data.xlsx"
     },
+    "related_article_data": {
+      "flow_type": "data_list",
+      "flow_name": "related_article_data",
+      "_xlsxPath": "data/test content.xlsx"
+    },
     "report_data": {
       "flow_type": "data_list",
       "flow_name": "report_data",
       "data_list_name": "report",
-      "_xlsxPath": "data/FacilitatorApp MX content.xlsx"
+      "_xlsxPath": "data/test content.xlsx"
     },
     "report_onboarding_data": {
       "flow_type": "data_list",
       "flow_name": "report_onboarding_data",
       "data_list_name": "report_onboarding",
-      "_xlsxPath": "data/FacilitatorApp MX content.xlsx"
+      "_xlsxPath": "data/test content.xlsx"
+    },
+    "resource_data": {
+      "flow_type": "data_list",
+      "flow_name": "resource_data",
+      "_xlsxPath": "data/test content.xlsx"
+    },
+    "section_data": {
+      "flow_type": "data_list",
+      "flow_name": "section_data",
+      "_xlsxPath": "data/test content.xlsx"
     },
     "state": {
       "flow_type": "data_list",
@@ -114,7 +134,7 @@
       "flow_type": "data_list",
       "flow_name": "tag_data",
       "data_list_name": "tag",
-      "_xlsxPath": "data/FacilitatorApp MX content.xlsx"
+      "_xlsxPath": "data/test content.xlsx"
     }
   },
   "data_pipe": {
@@ -190,7 +210,7 @@
     "article_global": {
       "flow_type": "global",
       "flow_name": "article_global",
-      "_xlsxPath": "data/FacilitatorApp MX content.xlsx"
+      "_xlsxPath": "data/test content.xlsx"
     },
     "debug_global": {
       "flow_type": "global",
@@ -638,6 +658,11 @@
       "flow_name": "message_box",
       "_xlsxPath": "templates/article.xlsx"
     },
+    "messages": {
+      "flow_type": "template",
+      "flow_name": "messages",
+      "_xlsxPath": "templates/article.xlsx"
+    },
     "nav_buttons": {
       "flow_type": "template",
       "flow_name": "nav_buttons",
@@ -693,10 +718,25 @@
       "flow_name": "profile_id",
       "_xlsxPath": "templates/profile.xlsx"
     },
+    "related_articles": {
+      "flow_type": "template",
+      "flow_name": "related_articles",
+      "_xlsxPath": "templates/article.xlsx"
+    },
+    "resources": {
+      "flow_type": "template",
+      "flow_name": "resources",
+      "_xlsxPath": "templates/article.xlsx"
+    },
     "section_header": {
       "flow_type": "template",
       "flow_name": "section_header",
       "_xlsxPath": "templates/navigation.xlsx"
+    },
+    "sections": {
+      "flow_type": "template",
+      "flow_name": "sections",
+      "_xlsxPath": "templates/article.xlsx"
     },
     "virtual_form": {
       "flow_type": "template",
