@@ -46,7 +46,11 @@ Automatic - When new code is mergerd into main
 ### Description
 This will create a web preview in Firebase
 ### Setup needed
-
+- DEPLOYMENT_NAME - Name of app (use underscores)
+- FIREBASE_HOSTING_CHANNEL - (live)
+- FIREBASE_HOSTING_TARGET - name of the hosting site in the firebase project
+- FIREBASE_PROJECT_ID - Project id in firebase (3 parts split by hyphens)
+- FIREBASE_CONFIG  - firebase config from Web app created in firebase
 ## Deploy-pr-preview
 ### Trigger
 Automatic - When 'test - preview' is added to a PR
